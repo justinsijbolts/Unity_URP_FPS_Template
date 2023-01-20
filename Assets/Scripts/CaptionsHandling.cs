@@ -33,13 +33,6 @@ public class CaptionsHandling : MonoBehaviour
         NextCaption(true, 0, 999);
     }
 
-    void Update() {
-        if(Input.GetKeyDown(KeyCode.Alpha3)) {
-            NextCaption(false, 3, 999);
-            StopCoroutine(TriggerFirstCaption(1f));
-        }
-    }
-
     public void NextCaption(bool firstCaption, int startingCaption, int endingCaption)
     {
 
